@@ -5,7 +5,16 @@ location=${location:-"Cluj-Napoca"}
 
 
 
-sudo apt-get install acpi conky
+sudo apt-get install acpi
+
+# setup conky (0.9.1)
+sudo apt-get remove --purge conky-std && sudo apt-get autoremove
+wget http://security.ubuntu.com/ubuntu/pool/universe/c/conky/conky-std_1.9.0-4_amd64.deb
+sudo gdebi conky-std_1.9.0-4_amd64.deb
+echo "conky version `conky -v | head -n 1 | cut -d \   -f 2`"
+sudo apt-mark hold conky-std
+#################################
+
 chmod +x ${SCRIPT_DIR}/weather.sh
 chmod +x ${SCRIPT_DIR}/conkystart.sh
 

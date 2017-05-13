@@ -26,3 +26,4 @@ export resource="mint";./install.sh
 #### Thanks:
 * [Clock rings](https://www.gnome-look.org/p/1115225/)
 * [Weather script](https://forum.manjaro.org/t/setting-weather-in-conky/9195/4#post_4)
+* [Conky xenial support](http://coreygoldberg.blogspot.ro/2016/03/what-heck-happened-to-conky-im-rolling-back.html)
